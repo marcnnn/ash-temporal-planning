@@ -1,6 +1,7 @@
 # ash_temporal: resource extension (design doc)
 
 **Repo:** new package (pattern: AshArchival/AshPaperTrail) · **Depends on:** 07, 08; later 06/09
+**File as:** discuss on Ash Discord/ElixirForum first (community norm for new-package proposals); Ash AI policy applies if proposed under ash-project.
 
 ## Vision
 

@@ -1,6 +1,7 @@
 # postgrex: verification checklist (expected: no changes)
 
 **Repo:** elixir-ecto/postgrex
+**File as:** nothing upstream unless a defect is found — then a GitHub bug report via their bug template, with repro.
 
 Driver looks temporal-ready already: `Postgrex.Range`/`Postgrex.Multirange`
 (`lib/postgrex/builtins.ex:51/:79`) with binary codecs for the built-in

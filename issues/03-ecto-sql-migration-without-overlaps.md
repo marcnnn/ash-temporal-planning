@@ -1,6 +1,7 @@
 # ecto_sql: `WITHOUT OVERLAPS` temporal keys in migrations
 
 **Repo:** elixir-ecto/ecto_sql · **Helps:** 08 (raw DDL works meanwhile)
+**File as:** proposal on the [elixir-ecto mailing list](https://groups.google.com/g/elixir-ecto) — GitHub issues there are bugs-only.
 
 ## Problem
 

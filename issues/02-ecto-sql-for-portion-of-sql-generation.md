@@ -1,6 +1,7 @@
 # ecto_sql: render `FOR PORTION OF` in the Postgres adapter
 
 **Repo:** elixir-ecto/ecto_sql · **Depends on:** 01 · **Blocks:** 09
+**File as:** part of the issue-01 mailing-list proposal (same thread) — GitHub issues there are bugs-only.
 
 ## Minimal change (small diff in 3 files + tests)
 

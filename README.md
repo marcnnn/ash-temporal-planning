@@ -41,6 +41,37 @@ ash, and ash_postgres.
 | 09 | [ash_postgres: portion bulk writes](issues/09-ash-postgres-for-portion-of.md) | ash_postgres | Depends on 01, 02, 06 |
 | 10 | [ash_temporal: extension design](issues/10-ash-temporal-extension.md) | new package | Depends on 07, 08 |
 
+## Filing guide (checked against each project's contribution policy)
+
+**ecto / ecto_sql / postgrex (issues 01–05):** these repos disable blank
+GitHub issues and accept only bug reports there. Feature proposals go to
+the [elixir-ecto mailing list](https://groups.google.com/g/elixir-ecto) —
+so 01–04 must be posted there as proposals (02–04 can reference the 01
+thread). 05 is a verification task; open a GitHub bug (using their bug
+template, with repro) only if a defect is found.
+
+**ash / ash_postgres (issues 06–09):** GitHub issues are the right venue
+for proposals, but per their CONTRIBUTING.md the discussion must center on
+the **use case, not the proposed feature** — when filing, lead with the
+scenario (temporal pricing/booking/history requirements) and attach the
+design as supporting material. Talk to the core team (issue + Discord/
+Forum) before starting implementation. PRs require `mix check` green and
+automated tests.
+
+**Ash AI policy (org-wide `AI_POLICY.md`, acceptance is part of their
+issue/PR templates):** AI-assisted contributions are welcome, but all
+content must be fully vetted and vouched for by the human submitter; no AI
+co-author trailers; AI text must never be pasted as your own words unless
+explicitly labeled AI-generated; keep issues/PRs the smallest reasonable
+scope; zero tolerance, up to bans. The ecto projects publish no formal AI
+policy — the same discipline applies as courtesy.
+
+**Consequently, for this repo:** these documents were AI-assisted research
+drafts. Before filing anything upstream: (1) personally verify the claims
+and file:line anchors, (2) rewrite the submission in your own words or
+explicitly label AI-generated parts, (3) trim to the minimal text the
+venue expects.
+
 ## Sequencing
 
 ```

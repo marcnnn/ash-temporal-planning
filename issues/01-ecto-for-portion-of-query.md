@@ -1,6 +1,7 @@
 # ecto: `for_portion_of` query clause for update_all/delete_all
 
 **Repo:** elixir-ecto/ecto · **Blocks:** 02, 09
+**File as:** proposal on the [elixir-ecto mailing list](https://groups.google.com/g/elixir-ecto) — GitHub issues there are bugs-only.
 
 ## Problem
 

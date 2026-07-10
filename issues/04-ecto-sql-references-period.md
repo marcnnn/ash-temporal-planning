@@ -1,6 +1,7 @@
 # ecto_sql: `PERIOD` temporal foreign keys in `references/2`
 
 **Repo:** elixir-ecto/ecto_sql · **Helps:** 08 (raw DDL works meanwhile)
+**File as:** proposal on the [elixir-ecto mailing list](https://groups.google.com/g/elixir-ecto), can share a thread with 03.
 
 ## Problem
 

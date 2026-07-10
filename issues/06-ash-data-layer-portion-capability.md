@@ -1,6 +1,7 @@
 # ash: portion capability + `portion` option on bulk update/destroy
 
 **Repo:** ash-project/ash · **Blocks:** 09
+**File as:** GitHub issue (proposal). Per Ash CONTRIBUTING: lead with the **use case**, not the design; AI-policy vetting applies (see README filing guide).
 
 ## Minimal change (one small PR; no data-layer implementation here)
 

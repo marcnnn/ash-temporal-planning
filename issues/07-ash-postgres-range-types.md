@@ -1,6 +1,7 @@
 # ash_postgres: range/multirange Ash types + overlap expressions
 
 **Repo:** ash-project/ash_postgres · **Blocks:** 08, 10 · **Start here** (PG 14+, useful standalone)
+**File as:** GitHub issue (proposal), use-case-first; AI-policy vetting applies (see README filing guide).
 
 ## Minimal change — two stacked PRs, new files only
 

@@ -1,6 +1,7 @@
 # ash_postgres: `FOR PORTION OF` bulk writes
 
 **Repo:** ash-project/ash_postgres · **Depends on:** 01, 02, 06 · **PG 19+**
+**File as:** GitHub issue (proposal), use-case-first, after the upstream ecto thread exists; AI-policy vetting applies.
 
 ## Minimal change (one small PR)
 

@@ -1,6 +1,7 @@
 # ash_postgres: temporal DDL in the migration generator
 
 **Repo:** ash-project/ash_postgres · **Depends on:** 07 · **Blocks:** 10
+**File as:** GitHub issue (proposal), use-case-first; discuss with core team before implementing; AI-policy vetting applies.
 
 Highest regression risk of the set (codegen + snapshots serve every
 deployed app) ⇒ split into **three stacked PRs**, each independently

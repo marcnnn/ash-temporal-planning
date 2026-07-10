@@ -2,6 +2,7 @@
 
 **Repo:** elixir-ecto/ecto_sql · **Depends on:** 01 · **Blocks:** 09
 **File as:** part of the issue-01 mailing-list proposal (same thread) — GitHub issues there are bugs-only.
+**Status (2026-07-10):** Still relevant. Grammar question resolved by the ash_postgres `temporal` branch: render the clause *before* the `AS` alias. `TO NULL` must express unbounded ends (`'infinity'` is wrong — see issue 05).
 
 ## Minimal change (small diff in 3 files + tests)
 

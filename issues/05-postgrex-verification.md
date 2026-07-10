@@ -2,6 +2,7 @@
 
 **Repo:** elixir-ecto/postgrex
 **File as:** nothing upstream unless a defect is found — then a GitHub bug report via their bug template, with repro.
+**Status (2026-07-10):** Still relevant, new data point: the ash_postgres `temporal` branch states Postgrex cannot decode a literal `'infinity'` range upper bound — add to the checklist as a possible upstream postgrex item.
 
 Driver looks temporal-ready already: `Postgrex.Range`/`Postgrex.Multirange`
 (`lib/postgrex/builtins.ex:51/:79`) with binary codecs for the built-in

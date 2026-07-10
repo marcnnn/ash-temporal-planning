@@ -26,6 +26,37 @@ ash, and ash_postgres.
    adapter/PG version ⇒ descriptive error, never wrong SQL.
 3. **Errors over magic.** Semver-minor releases only.
 
+## ⚠️ Upstream status (discovered 2026-07-10)
+
+**Zach Daniel is already building this.** `temporal` branches exist on
+ash and ash_postgres (single squashed commits "feat: support for temporal
+resources", 2026-06-29, ~2k/~3k insertions; ash_sqlite has none):
+
+- **ash core:** `temporal do strategy :context; attribute :valid_at end`
+  DSL section (modeled after multitenancy), a `:temporal` data-layer
+  feature, `Ash.Type.Range` + `Ash.Range` **in core** (not ash_postgres),
+  `range_overlaps` expression, `as_of` on Query/Changeset propagating like
+  `tenant`, `now()` anchored to `as_of`, temporal verifiers + relationship
+  filters, and a full guide (`documentation/topics/advanced/temporal-resources.md`).
+  Experimental; requires ash_postgres on **PG 19+**. Every read is a
+  point-in-time read (no "all history" read); writes always apply
+  `[as_of, ∞)`.
+- **ash_postgres:** migration generator emits `WITHOUT OVERLAPS` PK +
+  `btree_gist`; `PERIOD` reference validation; `AshPostgres.Temporal`
+  renders `FOR PORTION OF` by splicing the clause into `to_sql` output and
+  running `repo.query!` (explicitly because "Ecto has no FOR PORTION OF");
+  temporal upsert as a data-modifying CTE (since `ON CONFLICT` can't target
+  `WITHOUT OVERLAPS` keys).
+
+Consequences for this plan: **issues 06–10 are superseded** in their
+proposal form — the remaining value there is testing/reviewing the branch
+and filling its gaps (PG 18 fallback, an invisible `:history`/audit mode,
+ash_sqlite). **Issues 01–04 gain motivation:** upstream ecto support would
+let ash_postgres delete its raw-SQL workaround, and the branch answers our
+open grammar question (the clause goes *between table name and alias*;
+`UPDATE t AS a FOR PORTION OF ...` is a syntax error). Each issue carries a
+Status line. Coordinate with Zach (Discord/Forum) before doing anything.
+
 ## Issues
 
 | # | File | Repo | Notes |

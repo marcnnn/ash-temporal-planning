@@ -2,6 +2,7 @@
 
 **Repo:** new package (pattern: AshArchival/AshPaperTrail) · **Depends on:** 07, 08; later 06/09
 **File as:** discuss on Ash Discord/ElixirForum first (community norm for new-package proposals); Ash AI policy applies if proposed under ash-project.
+**Status (2026-07-10): SUPERSEDED in `:domain` form** — built into ash core (`temporal` section, `strategy :context`), no separate package. Gaps the branch does NOT cover (still open opportunities): PG 18 close-and-insert fallback (branch is PG 19+ only), the invisible `:history`/audit shadow-table mode, ash_sqlite support, and an all-history read (every branch read is point-in-time).
 
 ## Vision
 

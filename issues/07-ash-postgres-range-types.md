@@ -2,6 +2,7 @@
 
 **Repo:** ash-project/ash_postgres · **Blocks:** 08, 10 · **Start here** (PG 14+, useful standalone)
 **File as:** GitHub issue (proposal), use-case-first; AI-policy vetting applies (see README filing guide).
+**Status (2026-07-10): SUPERSEDED** — the `temporal` branch puts `Ash.Type.Range`, `Ash.Range`, and `range_overlaps` in **ash core**, with a thin `lib/types/range.ex` in ash_postgres. Remaining value: review + edge-case tests (empty/unbounded/`'infinity'`).
 
 ## Minimal change — two stacked PRs, new files only
 

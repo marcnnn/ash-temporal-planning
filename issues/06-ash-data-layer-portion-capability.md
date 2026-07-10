@@ -2,6 +2,7 @@
 
 **Repo:** ash-project/ash · **Blocks:** 09
 **File as:** GitHub issue (proposal). Per Ash CONTRIBUTING: lead with the **use case**, not the design; AI-policy vetting applies (see README filing guide).
+**Status (2026-07-10): SUPERSEDED** by ash's `temporal` branch — a single `:temporal` feature atom (`data_layer.ex:77`) plus `as_of` on Query/Changeset (propagating like `tenant`) replaces the portion-option design. Remaining value: review/test the branch.
 
 ## Minimal change (one small PR; no data-layer implementation here)
 

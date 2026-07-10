@@ -2,6 +2,7 @@
 
 **Repo:** elixir-ecto/ecto · **Blocks:** 02, 09
 **File as:** proposal on the [elixir-ecto mailing list](https://groups.google.com/g/elixir-ecto) — GitHub issues there are bugs-only.
+**Status (2026-07-10):** Still relevant, stronger. ash_postgres's `temporal` branch works around this by splicing the clause into `to_sql` output and running `repo.query!` (`AshPostgres.Temporal`) — upstream support deletes that workaround. Grammar answered: the clause goes *between table name and alias* (`UPDATE t AS a FOR PORTION OF` is a syntax error). Unbounded writes use `FROM $as_of TO NULL`.
 
 ## Problem
 

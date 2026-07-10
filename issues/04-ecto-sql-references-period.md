@@ -2,6 +2,7 @@
 
 **Repo:** elixir-ecto/ecto_sql · **Helps:** 08 (raw DDL works meanwhile)
 **File as:** proposal on the [elixir-ecto mailing list](https://groups.google.com/g/elixir-ecto), can share a thread with 03.
+**Status (2026-07-10):** Still relevant. The ash_postgres `temporal` branch validates PERIOD references itself (`lib/transformers/validate_temporal_references.ex`); ecto_sql support would simplify it.
 
 ## Problem
 

@@ -2,6 +2,7 @@
 
 **Repo:** ash-project/ash_postgres · **Depends on:** 01, 02, 06 · **PG 19+**
 **File as:** GitHub issue (proposal), use-case-first, after the upstream ecto thread exists; AI-policy vetting applies.
+**Status (2026-07-10): SUPERSEDED** functionally — the branch splices `FOR PORTION OF` into `to_sql` output (`AshPostgres.Temporal`) and implements temporal upsert as a data-modifying CTE (ON CONFLICT can't target WITHOUT OVERLAPS). Remaining contribution: swap the workaround for native ecto support once 01/02 land.
 
 ## Minimal change (one small PR)
 

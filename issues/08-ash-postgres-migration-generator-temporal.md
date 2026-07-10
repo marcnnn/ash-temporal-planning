@@ -2,6 +2,7 @@
 
 **Repo:** ash-project/ash_postgres · **Depends on:** 07 · **Blocks:** 10
 **File as:** GitHub issue (proposal), use-case-first; discuss with core team before implementing; AI-policy vetting applies.
+**Status (2026-07-10): SUPERSEDED** — implemented on the ash_postgres `temporal` branch (WITHOUT OVERLAPS PK, btree_gist auto-install, PERIOD reference validation, snapshot support). Remaining value: review + the non-regression/codegen-idempotence testing below still applies to that branch.
 
 Highest regression risk of the set (codegen + snapshots serve every
 deployed app) ⇒ split into **three stacked PRs**, each independently

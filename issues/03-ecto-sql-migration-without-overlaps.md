@@ -2,6 +2,7 @@
 
 **Repo:** elixir-ecto/ecto_sql · **Helps:** 08 (raw DDL works meanwhile)
 **File as:** proposal on the [elixir-ecto mailing list](https://groups.google.com/g/elixir-ecto) — GitHub issues there are bugs-only.
+**Status (2026-07-10):** Still relevant. The ash_postgres `temporal` branch emits this DDL itself in its migration generator; ecto_sql support would simplify it.
 
 ## Problem
 
